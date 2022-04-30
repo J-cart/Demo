@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@color/md_blue_400">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/cardBack"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Date"
+            android:textColor="@color/cardText"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTotalTimeInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Total Time"
+            android:textColor="@color/cardText"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvAverageSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="AVG SPEED"
+            android:textColor="@color/cardText"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTotalDistanceInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Total Distance"
+            android:textColor="@color/cardText"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTotalCaloriesInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Calories Burned"
+            android:textColor="@color/cardText"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

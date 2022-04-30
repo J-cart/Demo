@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Runs"
+        android:id="@+id/runFragment"
+        android:icon="@drawable/ic_directions_run_black_24dp"/>
+
+    <item android:title="Statistics"
+        android:id="@+id/statisticsFragment"
+        android:icon="@drawable/ic_graph"/>
+
+    <item android:title="Settings"
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_settings"/>
+</menu>
