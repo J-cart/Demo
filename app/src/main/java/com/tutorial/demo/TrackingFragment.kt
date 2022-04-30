@@ -8,6 +8,7 @@ import androidx.navigation.fragment.findNavController
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.model.LatLngBounds
+import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.gms.maps.model.PolylineOptions
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.tutorial.demo.databinding.FragmentTrackingBinding
@@ -185,6 +186,8 @@ class TrackingFragment : BaseFragment() {
                     MAP_ZOOM
                 )
             )
+
+//            map?.addMarker(MarkerOptions().position(pathPoints.last().last()).title("USER"))
         }
     }
 
