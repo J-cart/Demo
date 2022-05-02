@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.view.isGone
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import com.tutorial.demo.databinding.FragmentSetupBinding
@@ -34,6 +35,7 @@ class SetupFragment : BaseFragment() {
     ): View? {
         // Inflate the layout for this fragment
         _binding = FragmentSetupBinding.inflate(inflater, container, false)
+        mainActivity.binding.bottomNav.isGone = true
         return binding.root
     }
 

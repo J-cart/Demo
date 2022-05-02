@@ -37,13 +37,14 @@ class MainActivity : AppCompatActivity() {
                 R.id.settingsFragment,
                 R.id.runFragment,
                 R.id.statisticsFragment,
-                R.id.trackingFragment
+                R.id.trackingFragment,
+                R.id.setupFragment
             )
         )
         binding.bottomNav.setupWithNavController(navController)
         setupActionBarWithNavController(navController,appBarConfiguration)
 
-        navController.addOnDestinationChangedListener{_,destination,_->
+        navController.addOnDestinationChangedListener{ _, destination, _ ->
             when(destination.id){
                 R.id.settingsFragment,
                 R.id.runFragment,

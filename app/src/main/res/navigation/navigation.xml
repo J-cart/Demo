@@ -5,16 +5,12 @@
     android:id="@+id/navigation"
     app:startDestination="@id/setupFragment">
 
-    <action
-        android:id="@+id/action_global_trackingFragment"
-        app:destination="@id/trackingFragment"
-        app:launchSingleTop="true"/>
 
     <fragment
         android:id="@+id/setupFragment"
         android:name="com.tutorial.demo.SetupFragment"
         android:label="fragment_blank1"
-        tools:layout="@layout/fragment_setup" >
+        tools:layout="@layout/fragment_setup">
         <action
             android:id="@+id/action_setupFragment_to_runFragment"
             app:destination="@id/runFragment" />
@@ -32,12 +28,11 @@
         android:id="@+id/statisticsFragment"
         android:name="com.tutorial.demo.StatisticsFragment"
         android:label="fragment_blank3"
-        tools:layout="@layout/fragment_statistics" >
-    </fragment>
+        tools:layout="@layout/fragment_statistics"></fragment>
     <fragment
         android:id="@+id/trackingFragment"
         android:name="com.tutorial.demo.TrackingFragment"
-        android:label="TrackingFragment" >
+        android:label="TrackingFragment">
         <action
             android:id="@+id/action_trackingFragment_to_runFragment"
             app:destination="@id/runFragment" />
@@ -47,4 +42,9 @@
         android:name="com.tutorial.demo.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
+
+    <action
+        android:id="@+id/action_global_trackingFragment"
+        app:destination="@id/trackingFragment"
+        app:launchSingleTop="true" />
 </navigation>

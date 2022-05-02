@@ -62,9 +62,20 @@ class TrackingFragment : BaseFragment() {
 
     private fun getToolBarName() {
         val name = sharedPref.getString(KEY_NAME, "")
-        mainActivity.supportActionBar?.apply {
+//        mainActivity.supportActionBar?.apply {
+//            title = "Let's Go ${name}!"
+//        }
+// this doesn't work with the teetxView in the toolbar...i i think i'd have to use
+// androidX toolbar for this to work
+        mainActivity.binding.toolBar.apply {
             title = "Let's Go ${name}!"
         }
+
+//        mainActivity.binding.tvToolbarTitle.apply {
+//            text = "Let's Go ${name}!"
+//            textSize = 20F
+//        }
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
