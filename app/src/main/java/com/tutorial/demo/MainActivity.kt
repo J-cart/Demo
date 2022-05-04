@@ -32,6 +32,12 @@ class MainActivity : AppCompatActivity() {
         navController = fragHost.findNavController()
         setSupportActionBar(binding.toolBar)
 
+//        val actionBar = supportActionBar
+//        if (actionBar != null) {
+//            actionBar.setDisplayShowHomeEnabled(false);
+//            actionBar.setHomeButtonEnabled(false);
+//        }
+
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.settingsFragment,
@@ -42,14 +48,14 @@ class MainActivity : AppCompatActivity() {
             )
         )
         binding.bottomNav.setupWithNavController(navController)
-        setupActionBarWithNavController(navController,appBarConfiguration)
+        setupActionBarWithNavController(navController, appBarConfiguration)
 
-        navController.addOnDestinationChangedListener{ _, destination, _ ->
-            when(destination.id){
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            when (destination.id) {
                 R.id.settingsFragment,
                 R.id.runFragment,
-                R.id.statisticsFragment ->  binding.bottomNav.isVisible = true
-                else->  binding.bottomNav.isGone = true
+                R.id.statisticsFragment -> binding.bottomNav.isVisible = true
+                else -> binding.bottomNav.isGone = true
             }
 
         }

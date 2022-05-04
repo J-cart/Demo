@@ -8,7 +8,6 @@ import androidx.navigation.fragment.findNavController
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.model.LatLngBounds
-import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.gms.maps.model.PolylineOptions
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.tutorial.demo.databinding.FragmentTrackingBinding
@@ -56,20 +55,27 @@ class TrackingFragment : BaseFragment() {
         // Inflate the layout for this fragment
 
         setHasOptionsMenu(true)
+        getToolBarName()
+//        mainActivity.supportActionBar?.hide()
         _binding = FragmentTrackingBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     private fun getToolBarName() {
         val name = sharedPref.getString(KEY_NAME, "")
-//        mainActivity.supportActionBar?.apply {
-//            title = "Let's Go ${name}!"
-//        }
-// this doesn't work with the teetxView in the toolbar...i i think i'd have to use
-// androidX toolbar for this to work
-        mainActivity.binding.toolBar.apply {
+        mainActivity.supportActionBar?.apply {
             title = "Let's Go ${name}!"
         }
+// this doesn't work with the textView in the toolbar...i i think i'd have to use
+// androidX toolbar for this to work
+//        mainActivity.binding.toolBar.apply {
+//            title = "Let's Go ${name}!"
+//        }
+//
+//        mainActivity.binding.tvToolbarTitle.apply {
+//            text = "Let's Go ${name}!"
+//            textSize = 20F
+//        }
 
 //        mainActivity.binding.tvToolbarTitle.apply {
 //            text = "Let's Go ${name}!"
@@ -81,7 +87,7 @@ class TrackingFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.mapView.onCreate(savedInstanceState)
-        getToolBarName()
+
         binding.mapView.getMapAsync {
             map = it
             addAllPolylines()
