@@ -1,95 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <!--    <com.google.android.material.appbar.MaterialToolbar-->
-    <!--        android:id="@+id/toolBar"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:background="@color/md_blue_900">-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
-    <!--        <com.google.android.material.textview.MaterialTextView-->
-    <!--            android:id="@+id/tvToolbarTitle"-->
-    <!--            android:layout_width="match_parent"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:gravity="center_vertical"-->
-    <!--            android:text="Running App"-->
-    <!--            android:textColor="@android:color/white"-->
-    <!--            android:textSize="30sp"-->
+        <!--    <com.google.android.material.appbar.MaterialToolbar-->
+        <!--        android:id="@+id/toolBar"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:background="@color/md_blue_900">-->
 
-    <!--            android:textStyle="bold"-->
-    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--            app:layout_constraintEnd_toEndOf="parent"-->
-    <!--            app:layout_constraintHorizontal_bias="0.5"-->
-    <!--            app:layout_constraintStart_toStartOf="parent"-->
-    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+        <!--        <com.google.android.material.textview.MaterialTextView-->
+        <!--            android:id="@+id/tvToolbarTitle"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:gravity="center_vertical"-->
+        <!--            android:text="Running App"-->
+        <!--            android:textColor="@android:color/white"-->
+        <!--            android:textSize="30sp"-->
 
-    <!--    </com.google.android.material.appbar.MaterialToolbar>-->
+        <!--            android:textStyle="bold"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.5"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--    </com.google.android.material.appbar.MaterialToolbar>-->
 
 
-<!--    <com.google.android.material.appbar.AppBarLayout-->
-<!--        android:id="@+id/appBarLayout"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="?android:attr/actionBarSize"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.5"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent">-->
+        <!--    <com.google.android.material.appbar.AppBarLayout-->
+        <!--        android:id="@+id/appBarLayout"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="?android:attr/actionBarSize"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintHorizontal_bias="0.5"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toTopOf="parent">-->
 
-<!--        <com.google.android.material.appbar.MaterialToolbar-->
-<!--            android:id="@+id/toolBar"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent">-->
+        <!--        <com.google.android.material.appbar.MaterialToolbar-->
+        <!--            android:id="@+id/toolBar"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent">-->
 
-<!--            <com.google.android.material.textview.MaterialTextView-->
-<!--                android:id="@+id/tvToolbarTitle"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:gravity="center_vertical"-->
-<!--                android:text="Running App"-->
-<!--                android:textColor="@android:color/white"-->
-<!--                android:textSize="30sp"-->
-<!--                android:textStyle="bold"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintHorizontal_bias="0.5"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="parent" />-->
+        <!--            <com.google.android.material.textview.MaterialTextView-->
+        <!--                android:id="@+id/tvToolbarTitle"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:gravity="center_vertical"-->
+        <!--                android:text="Running App"-->
+        <!--                android:textColor="@android:color/white"-->
+        <!--                android:textSize="30sp"-->
+        <!--                android:textStyle="bold"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintHorizontal_bias="0.5"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
 
-<!--        </com.google.android.material.appbar.MaterialToolbar>-->
-<!--    </com.google.android.material.appbar.AppBarLayout>-->
+        <!--        </com.google.android.material.appbar.MaterialToolbar>-->
+        <!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragHost"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomNav"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/navigation" />
+        <!--        android:layout_below="@id/toolBar"-->
+        <!--    android:layout_below="@id/appBarLayout"-->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/md_blue_900"
+            app:itemIconTint="@drawable/bottom_nav_selector"
+            app:itemTextColor="@drawable/bottom_nav_selector"
+            app:menu="@menu/bottom_nav" />
+
+    </RelativeLayout>
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolBar"
-        android:background="@color/md_blue_900"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragHost"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/bottomNav"
-        android:layout_below="@id/toolBar"
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/navigation" />
-
-<!--    android:layout_below="@id/appBarLayout"-->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="@color/md_blue_900"
-        app:itemIconTint="@drawable/bottom_nav_selector"
-        app:itemTextColor="@drawable/bottom_nav_selector"
-        app:menu="@menu/bottom_nav" />
-
-</RelativeLayout>
+        android:background="@color/md_blue_900" />
+</FrameLayout>

@@ -10,7 +10,6 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.tutorial.demo.databinding.ActivityMainBinding
 import com.tutorial.demo.others.Constants
@@ -32,11 +31,6 @@ class MainActivity : AppCompatActivity() {
         navController = fragHost.findNavController()
         setSupportActionBar(binding.toolBar)
 
-//        val actionBar = supportActionBar
-//        if (actionBar != null) {
-//            actionBar.setDisplayShowHomeEnabled(false);
-//            actionBar.setHomeButtonEnabled(false);
-//        }
 
         appBarConfiguration = AppBarConfiguration(
             setOf(
@@ -48,7 +42,7 @@ class MainActivity : AppCompatActivity() {
             )
         )
         binding.bottomNav.setupWithNavController(navController)
-        setupActionBarWithNavController(navController, appBarConfiguration)
+//        setupActionBarWithNavController(navController, appBarConfiguration)
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {

@@ -66,21 +66,6 @@ class TrackingFragment : BaseFragment() {
         mainActivity.supportActionBar?.apply {
             title = "Let's Go ${name}!"
         }
-// this doesn't work with the textView in the toolbar...i i think i'd have to use
-// androidX toolbar for this to work
-//        mainActivity.binding.toolBar.apply {
-//            title = "Let's Go ${name}!"
-//        }
-//
-//        mainActivity.binding.tvToolbarTitle.apply {
-//            text = "Let's Go ${name}!"
-//            textSize = 20F
-//        }
-
-//        mainActivity.binding.tvToolbarTitle.apply {
-//            text = "Let's Go ${name}!"
-//            textSize = 20F
-//        }
 
     }
 
@@ -291,6 +276,7 @@ class TrackingFragment : BaseFragment() {
             val formattedTime = TrackingUtility.getFormattedTimeInMillis(curTimeInMillis, true)
             binding.tvTimer.text = formattedTime
         })
+
     }
 
 
